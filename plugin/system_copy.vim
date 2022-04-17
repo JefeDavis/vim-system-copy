@@ -138,26 +138,26 @@ nnoremap <silent> <Plug>SystemPaste :<C-U>set opfunc=<SID>system_paste<CR>g@
 nnoremap <silent> <Plug>SystemPasteLine :<C-U>call <SID>system_paste_line()<CR>
 
 if !hasmapto('<Plug>SystemCopy', 'n') || maparg('cp', 'n') ==# ''
-  nmap cp <Plug>SystemCopy
+  nmap zy <Plug>SystemCopy
 endif
 
 if !hasmapto('<Plug>SystemCopy', 'v') || maparg('cp', 'v') ==# ''
-  xmap cp <Plug>SystemCopy
+  xmap zy <Plug>SystemCopy
 endif
 
 if !hasmapto('<Plug>SystemCopyLine', 'n') || maparg('cP', 'n') ==# ''
-  nmap cP <Plug>SystemCopyLine
+  nmap zY <Plug>SystemCopyLine
 endif
 
 if !hasmapto('<Plug>SystemPaste', 'n') || maparg('cv', 'n') ==# ''
-  nmap cv <Plug>SystemPaste
+  nmap zp <Plug>SystemPaste
 endif
 
 if !hasmapto('<Plug>SystemPaste', 'v') || maparg('cv', 'v') ==# ''
-  xmap cv <Plug>SystemPaste
+  xmap zp <Plug>SystemPaste
 endif
 
 if !hasmapto('<Plug>SystemPasteLine', 'n') || maparg('cV', 'n') ==# ''
-  nmap cV <Plug>SystemPasteLine
+  nmap zP <Plug>SystemPasteLine
 endif
 " vim:ts=2:sw=2:sts=2
